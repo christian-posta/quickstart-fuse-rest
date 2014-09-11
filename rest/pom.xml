@@ -183,6 +183,7 @@
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>fabric8-maven-plugin</artifactId>
+                <version>1.0.0.redhat-379</version>
                 <configuration>
                   <profile>my-rest</profile>
                   <features>fabric-cxf-registry fabric-cxf cxf war swagger</features>
