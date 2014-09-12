@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>rest</artifactId>
-
+    <packaging>bundle</packaging>
 
     <dependencies>
         <!--
@@ -186,8 +186,8 @@
                 <version>${fabric.version}</version>
                 <configuration>
                   <profile>my-rest</profile>
-                  <features>fabric-cxf-registry fabric-cxf cxf war swagger</features>
-                  <featureRepos>mvn:org.apache.cxf.karaf/apache-cxf/${version:cxf}/xml/features</featureRepos>
+                    <parentProfiles>feature-cxf</parentProfiles>
+                  <features>fabric-cxf swagger</features>
                 </configuration>
             </plugin>
         </plugins>
