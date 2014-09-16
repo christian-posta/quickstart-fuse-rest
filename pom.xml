@@ -101,6 +101,19 @@
                 <updatePolicy>never</updatePolicy>
             </releases>
         </repository>
+        <!-- Note: repo.fusesource.com is the correct repo for JBoss Fuse and it is not a mistake -->
+        <repository>
+            <id>fusesource.ea</id>
+            <name>JBoss Community Early Access Release Repository</name>
+            <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -108,6 +121,18 @@
             <id>fusesource.m2</id>
             <name>FuseSource Community Release Repository</name>
             <url>https://repo.fusesource.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+        <pluginRepository>
+            <id>fusesource.ea</id>
+            <name>FuseSource Community Early Access Release Repository</name>
+            <url>https://repo.fusesource.com/nexus/content/groups/ea</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
